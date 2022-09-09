@@ -1,0 +1,231 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+body, html {
+    height: 100%;
+}
+
+body{
+    background:url("https://img.freepik.com/free-photo/retro-living-room-interior-design_53876-145503.jpg?w=740&t=st=1658736372~exp=1658736972~hmac=311c3078c75c077f05413965e0086087aa07936d8a53d305cd8db53f76a2d4f4");
+    background-size: cover;
+}
+
+/* nav start */
+
+nav{
+    margin: 0px 50px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+}
+
+.logo{
+    flex: 1;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.menu-icon{
+    display: none;
+    color: #FFFFFF;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.list-items{
+    display: flex;
+    list-style-type: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.list-item{
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.contact-us{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.contact-logo{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.contact-content h6{
+    font-size: 15px;
+}
+
+/* create style */
+
+section{
+    margin: 0px 50px;
+    height: 80vh;
+}
+
+.first-section{
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.first-section h1{
+    font-size: 80px;
+    font-weight: 900;
+    max-width: 50vw;
+}
+
+.create-icon{
+    background-color: #FFFFFF;
+    max-width: 100px;
+    text-align: center;
+    border-radius: 20px
+}
+
+.create-container{
+    background-color: #ffffff1a;
+    max-width: 250px;
+    max-height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.vertical-line{
+    height: 10vh;
+    width: 2px;
+    margin-left: 200px;
+    background-color: #FFFFFF;
+}
+
+.vertical-dot{
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    margin-left: 191px;
+    border-radius: 50%;
+}
+
+/* second section */
+
+.second-section{
+    margin-top: 100px;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-around;
+}
+
+.learn-more-btn{
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 3px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.idea{
+    display: flex;
+}
+
+.idea-icon{
+    background-color: #FFFFFF;
+    max-width: 100px;
+    text-align: center;
+    border-radius: 20px
+}
+
+.idea-container{
+    background-color: #ffffff1a;
+    max-width: 250px;
+    max-height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.horizantal-line-dot{
+    display: flex;
+}
+
+.horizantal-line{
+    height: 2px;
+    width: 10vw;
+    margin-top: 90px;
+    background-color: #FFFFFF;
+}
+
+.horizantal-dot{
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    margin-top: 81px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .list-items{
+        font-size: 15px;
+    }
+    
+    .list-item{
+        margin-right: 20px;
+    }
+    .first-section h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar{
+        display: none;
+        height: 0;
+    }
+    .menu-icon{
+        display: block;
+        height: 10vh;
+    }
+    .first-section{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .first-section h1{
+        max-width: 100vw;
+        font-size: 30px;
+    }
+    .second-section{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .idea{
+        margin-top: 20px;
+    }
+    .idea-container,.create-container{
+        font-size: 12px;
+    }
+}
